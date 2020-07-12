@@ -2,8 +2,9 @@ import cv2
 
 capture = cv2.VideoCapture(0)
 # 0 is for web-cam
+key = 0
 
-while True:
+while key != ord("q"):
 
     # ret is True or False, to see if live feed is on or not.
     ret, frame = capture.read()
@@ -23,5 +24,7 @@ while True:
         key = cv2.waitKey(1)
 
         if key == ord("q"):
-            capture.release()
-            cv2.destroyAllWindows()
+            break
+
+capture.release()
+cv2.destroyAllWindows()
