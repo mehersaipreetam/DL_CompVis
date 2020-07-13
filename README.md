@@ -11,3 +11,7 @@ Notebooks and code files contain information and points to note, Please refer to
 ##### 2. MNIST Handwritten Digit Recognition
 
 ##### 3. CIFAR10 Object Classification
+
+##### 4. Face Detection in Live Feed
+
+##### 5. Harry Potter Invisibility Cloak

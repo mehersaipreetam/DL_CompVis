@@ -8,7 +8,7 @@ while key != ord("q"):
 
     # ret is True or False, to see if live feed is on or not.
     ret, frame = capture.read()
-    # To avoid https://stackoverflow.com/questions/30508922/error-215-empty-in-function-detectmultiscale, mention complete file path
+    # To avoid https://stackoverflow.com/questions/30508922/error-215-empty-in-function-detectmultiscale, mention complete file path when not executing from terminal/cmd prompt
     classifier = cv2.CascadeClassifier('HaarCascade_FrontalFace/haarcascade_frontalface_default.xml')
     faces = classifier.detectMultiScale(frame)
 
