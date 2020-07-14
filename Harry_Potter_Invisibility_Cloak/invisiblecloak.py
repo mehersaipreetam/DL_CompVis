@@ -41,9 +41,9 @@ while cap.isOpened():
         #   Opencv morphology
         #   Refer Docs
         ###
-        kernel = np.ones((3,3),np.uint8)
-        mask = cv2.dilate(mask,kernel,iterations = 1)
         kernel = np.ones((10,10),np.uint8)
+        mask = cv2.dilate(mask,kernel,iterations = 1)
+        kernel = np.ones((20,20),np.uint8)
         mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
 
         part1 = cv2.bitwise_and(back,back,mask=mask)
